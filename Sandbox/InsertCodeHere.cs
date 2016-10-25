@@ -60,9 +60,12 @@ namespace Sandbox
             // Tip: Think about how average is defined; then
             // you might reuse something from Case 6
             int average = 0;
+            int sum = 0;
             foreach (int totalSum in aListOfInt)
             {
-                
+                sum = totalSum + sum;
+                average =  sum / 6;
+                Console.WriteLine(average);
             }
 
 
